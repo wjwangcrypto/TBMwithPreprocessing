@@ -1,13 +1,14 @@
-
-extern char AES_one_round_pre();
-extern char AES_one_round_online();
+extern char AES_ten_round_pre();
+extern char AES_ten_round_online();
 
 int main(void)
 {
-	// AES round function. 
+
+	AES_ten_round_pre();
 	
-	AES_one_round_pre(); 
-	AES_one_round_online();
+	AES_ten_round_online();
+	
+	while(1);
 	
 	return 0;
 }
